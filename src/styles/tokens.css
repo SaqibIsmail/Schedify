@@ -1,0 +1,61 @@
+:root {
+  /* Typography */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+
+  --font-size-1: 12px;
+  --font-size-2: 14px;
+  --font-size-3: 16px;
+  --font-size-4: 18px;
+  --font-size-5: 24px;
+  --font-size-6: 32px;
+  --font-size-7: 44px;
+  --line-1: 16px;
+  --line-2: 20px;
+  --line-3: 24px;
+  --line-4: 28px;
+  --line-5: 32px;
+  --line-6: 40px;
+  --line-7: 52px;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+
+  /* Spacing scale (use these instead of random px) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* Layout */
+  --container-max: 1100px;
+
+  /* Color (Apple-ish: neutral, soft contrast) */
+  --color-bg: #0b0b0f;
+  --color-surface: rgba(255, 255, 255, 0.06);
+  --color-surface-strong: rgba(255, 255, 255, 0.10);
+  --color-border: rgba(255, 255, 255, 0.12);
+
+  --color-text: rgba(255, 255, 255, 0.92);
+  --color-text-muted: rgba(255, 255, 255, 0.70);
+
+  --color-primary: #3b82f6;
+  --color-primary-hover: #2563eb;
+
+  /* Radius */
+  --radius-1: 10px;
+  --radius-2: 14px;
+  --radius-3: 18px;
+
+  /* Shadow (subtle, modern) */
+  --shadow-1: 0 1px 2px rgba(0,0,0,0.35);
+  --shadow-2: 0 8px 30px rgba(0,0,0,0.45);
+
+  /* Focus ring (keyboard accessibility) */
+  --focus-ring: 0 0 0 3px rgba(59, 130, 246, 0.35);
+}
