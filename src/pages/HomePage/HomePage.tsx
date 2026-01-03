@@ -5,6 +5,8 @@ import old_1 from "../../images/old_1.png";
 import old_2 from "../../images/old_2.png";
 import old_3 from "../../images/old_3.png";
 
+import { Calendar, Clock, UserCircle2, Users, Bell, Shield, BarChart } from "lucide-react";
+
 export function HomePage() {
   return (
     <div>
@@ -20,7 +22,10 @@ export function HomePage() {
                     <Button variant="secondary">Schedule</Button>
                 </nav>
 
-                 <a href="#admin" className={styles.adminLogo}>Admin</a>
+                
+                    <UserCircle2 className={styles.adminIcon} />
+           
+                
 
           </div>
 
@@ -45,11 +50,24 @@ export function HomePage() {
                     <Button variant="secondary">Generate Schedule</Button>
               </div>
 
-              <div className={styles.heroTags}>
-                    <p>Smart Scheduling</p>
-                    <p>Time Tracking</p>
-                    <p>Staff Management</p>
-              </div>
+                <div className={styles.heroTags}>
+
+                    <div className={styles.tagIcon}>    
+                        <Calendar className={styles.tagsIcon_1} />
+                        <p> Smart Scheduling</p>
+                    </div>
+
+                    <div className={styles.tagIcon}>    
+                        <Clock className={styles.tagsIcon_1} />
+                        <p> Time Tracking</p>
+                    </div>
+
+                    <div className={styles.tagIcon}>    
+                        <Users className={styles.tagsIcon_1} />
+                        <p> Staff Management</p>
+                    </div>
+   
+                </div>
 
 
             </div>
@@ -77,6 +95,7 @@ export function HomePage() {
        
             <div className={styles.cards}>
               <div className={styles.card}>
+                <Calendar className={styles.cardIcon} />
                 <div className={styles.cardTitle}>Easy Scheduling</div>
                 <div className={styles.cardText}>
                   Create and manage staff schedules effortlessly with our intuitive interface.
@@ -84,6 +103,7 @@ export function HomePage() {
               </div>
 
               <div className={styles.card}>
+                <Clock className={styles.cardIcon} />
                 <div className={styles.cardTitle}>Shift Management</div>
                 <div className={styles.cardText}>
                   Track shifts, overtime, and availability with real-time updates.
@@ -91,6 +111,7 @@ export function HomePage() {
               </div>
 
               <div className={styles.card}>
+                <Users className={styles.cardIcon} />
                 <div className={styles.cardTitle}>Staff Coordination</div>
                 <div className={styles.cardText}>
                   Ensure optimal staff coverage for all resident care needs.
@@ -98,6 +119,7 @@ export function HomePage() {
               </div>
 
               <div className={styles.card}>
+                <Bell className={styles.cardIcon} />
                 <div className={styles.cardTitle}>Fair Shift Distribution</div>
                 <div className={styles.cardText}>
                   Ensure fair shifts for employee satisfaction and work-life balance.
@@ -105,6 +127,7 @@ export function HomePage() {
               </div>
 
               <div className={styles.card}>
+                <BarChart className={styles.cardIcon} />
                 <div className={styles.cardTitle}>Analytics</div>
                 <div className={styles.cardText}>
                   Gain insights into staffing patterns and optimize resource allocation.
@@ -112,6 +135,7 @@ export function HomePage() {
               </div>
 
               <div className={styles.card}>
+                <Shield className={styles.cardIcon} />
                 <div className={styles.cardTitle}>Compliance</div>
                 <div className={styles.cardText}>
                   Stay compliant with labor laws and healthcare regulations.

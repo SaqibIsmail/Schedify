@@ -108,6 +108,7 @@
 .heroCardTitle {
   font-weight: var(--weight-semibold);
   margin-bottom: var(--space-3);
+
 }
 
 .heroCardRow {
@@ -145,6 +146,12 @@
   border: 1px solid var(--color-border);
   border-radius: var(--radius-3);
   box-shadow: var(--shadow-1);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-3);
+  transform: translateY(-4px);
+  transition: all 0.3s ease;
 }
 
 .cardTitle {
@@ -219,9 +226,47 @@
  justify-self: center;
  align-self: center;
 }
+
 .heroTags{
     margin-top: var(--space-6);
     display : flex;
-    gap: var(--space-3);
+    gap: var(--space-6);
     
+}
+
+.tagsIcon_1 {
+    
+    color :rgba(255, 255, 255, 0.65);
+    background-color: rgb(7, 4, 4);
+}
+
+.tagIcon{
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    font-size: var(--font-size-3);
+
+    
+}
+
+.cardIcon{
+    width: 40px;
+    height: 40px;
+    color: var(--color-primary);
+    margin-bottom: var(--space-5);
+   
+  
+}
+
+.adminIcon {
+    margin-right: var(--space-6);
+    width: 32px;
+    height: 32px;  
+        color: var(--color-text);
+}
+
+.adminIcon:hover {
+    cursor: pointer;
+    color:dimgrey;
+    transition: color 0.2s ease;
 }
